@@ -1,10 +1,10 @@
-# Guia Rápido de Estruturas de Programação
+# Guia Rápido de Estruturas de Programação / Quick Guide to Programming Structures
 
-Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagens.
+Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagens / Practical and quick version for reference. Syntax comparison across languages
 
-## 1. Estruturas Condicionais
+## 1. Estruturas Condicionais / Conditional Structures
 
-| Linguagem | If / Else | Switch / Match-Case |
+| Linguagem / Language | If / Else | Switch / Match-Case |
 |-----------|-----------|-------------------|
 | C / C++ / C# | ```c if(cond){ } else if(cond2){ } else{ }``` | ```c switch(val){ case 1: break; default: }``` |
 | Java | ```java if(cond){ } else if(cond2){ } else{ }``` | ```java switch(val){ case 1 -> ; default -> ; }``` |
@@ -16,9 +16,9 @@ Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagen
 
 ---
 
-## 2. Estruturas de Repetição
+## 2. Estruturas de Repetição / Loops
 
-| Linguagem | For | While | Do-While |
+| Linguagem / Language | For | While | Do-While |
 |-----------|-----|-------|-----------|
 | C / C++ / C# / Java / JS / PHP | ```for(int i=0;i<5;i++){ }``` | ```i=0; while(i<5){ i++; }``` | ```i=0; do{i++;}while(i<5);``` |
 | Python | ```for i in range(5):``` | ```i=0; while i<5: i+=1``` | ```i=0; while True: i+=1; if i>=5: break``` |
@@ -27,12 +27,12 @@ Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagen
 
 ---
 
-## 3. Procedimentos e Funções
+## 3. Procedimentos e Funções / Procedures and Functions
 
-| Linguagem | Procedimento | Função / Retorno |
+| Linguagem / Language | Procedimento / Procedure | Função / Retorno / Function / Return |
 |-----------|-------------|----------------|
 | C | ```void proc(){}``` | ```int func(){return 1;}``` |
-| C++ | Igual C | Igual C |
+| C++ | Igual/Equals C | Igual/Equals C |
 | C# | ```static void Proc(){}``` | ```static int Func(){return 1;}``` |
 | Java | ```void proc(){}``` | ```int func(){return 1;}``` |
 | JavaScript | ```function proc(){}``` | ```function func(){return 1;}``` |
@@ -45,10 +45,10 @@ Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagen
 
 ## 4. Vetores / Arrays
 
-| Linguagem | Sintaxe |
+| Linguagem / Language | Sintaxe / Sintax |
 |-----------|---------|
 | C | `int v[5] = {1,2,3,4,5};` |
-| C++ | Igual C ou `std::vector<int> v={1,2,3};` |
+| C++ | Igual/Equals C ou/or `std::vector<int> v={1,2,3};` |
 | C# / Java | `int[] v={1,2,3,4,5};` |
 | JavaScript | `let v=[1,2,3,4,5];` |
 | Python | `v=[1,2,3,4,5]` |
@@ -58,9 +58,9 @@ Versão prática e rápida para consulta. Comparativo de sintaxe entre linguagen
 
 ---
 
-## 5. Matrizes / Arrays Multidimensionais
+## 5. Matrizes / Multidimensional Arrays
 
-| Linguagem | Sintaxe |
+| Linguagem / Language | Sintaxe / Sintax |
 |-----------|---------|
 | C / C++ / C# | `int m[2][3]={{1,2,3},{4,5,6}};` |
 | Java | `int[][] m={{1,2,3},{4,5,6}};` |

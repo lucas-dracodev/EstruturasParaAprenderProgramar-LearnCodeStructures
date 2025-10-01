@@ -1,24 +1,32 @@
-# Guia de Estruturas de Programação
+# Guia de Estruturas de Programação / Programming Structures Guide
 
-Aqui iremos seguir a seguinte ordem: Condicionais → Estruturas de repetição → Procedimentos/Funções → Vetores → Matrizes.
+Aqui iremos seguir a seguinte ordem: Condicionais → Estruturas de repetição → Procedimentos/Funções → Vetores → Matrizes
+
+We will follow this order: Conditionals → Loops → Procedures/Functions → Arrays → Matrices
 
 Este guia apresenta os conceitos e exemplos de estruturas de programação em múltiplas linguagens:  
-C, C++, C#, Java, JavaScript, Python, Ruby, PHP e Go.
+C, C++, C#, Java, JavaScript, Python, Ruby, PHP e Go
+
+This guide presents the concepts and examples of programming structures in multiple languages:  
+C, C++, C#, Java, JavaScript, Python, Ruby, PHP, and Go
 
 ---
 
-# 1️⃣ Estruturas Condicionais
+# 1️⃣ Estruturas Condicionais / Conditional Structures
 
-**Conceito:**  
-Permitem executar blocos de código dependendo de condições lógicas (verdadeiro/falso).  
-São essenciais para tomada de decisão em programas.
+**Conceito / Concept:**  
+Permitem executar blocos de código dependendo de condições lógicas (verdadeiro/falso)
+Allows executing code blocks depending on logical conditions (true/false)  
 
-| Estrutura | Descrição | Linguagens / Particularidades |
+São essenciais para tomada de decisão em programas
+They are essential for decision making in programs
+
+| Estrutura / Structure | Descrição / Description | Linguagens / Particularidades / Languages / Particularities |
 |-----------|-----------|------------------------------|
-| if / if-else / if-elif-else | Executa código se a condição for verdadeira. Pode ter ramificações. | Python usa `elif` no lugar de `else if`. |
-| switch / match-case | Seleção múltipla baseada no valor de uma variável. | Python usa `match-case`. Algumas linguagens não têm switch (ex: Ruby). |
+| if / if-else / if-elif-else | Executa código se a condição for verdadeira. Pode ter ramificações / Executes code if the condition is true. Can have branches | Python usa `elif` no lugar de `else if` / Python uses `elif` instead of `else if` |
+| switch / match-case | Seleção múltipla baseada no valor de uma variável / Multiple selection based on the value of a variable | Python usa `match-case`. Algumas linguagens não têm switch (ex: Ruby) / Python uses `match-case`. Some languages do not have switch (e.g., Ruby) |
 
-### Exemplos de If / Else
+### If / Else
 
 ```c
 // C, C++, C#
@@ -97,7 +105,7 @@ if x > 5 {
 }
 ```
 
-### Exemplos de Switch / Match-case
+### Switch / Match-case
 
 ```c
 // C, C++, C#
@@ -187,30 +195,31 @@ default:
 ```
 ---
 
-# 2️⃣ Estruturas de Repetição
+# 2️⃣ Estruturas de Repetição / Loops
 
-**Conceito:**
-Executam blocos de código várias vezes, controlando o fluxo por **contadores** ou **condições**.
+**Conceito / Concept:**  
+Executam blocos de código várias vezes, controlando o fluxo por **contadores** ou **condições** / Execute code blocks multiple times, controlling the flow using **counters** or **conditions**
 
-## Principais Estruturas
+## Principais Estruturas / Main Structures
 
-- **for** → Laço com inicialização, condição e incremento/decremento.  
-- **while** → Executa enquanto a condição for verdadeira.  
-- **do-while** → Executa ao menos uma vez, depois repete enquanto a condição for verdadeira.  
+- **for** → Laço com inicialização, condição e incremento/decremento / Loop with initialization, condition, and increment/decrement  
+- **while** → Executa enquanto a condição for verdadeira / Executes while the condition is true  
+- **do-while** → Executa ao menos uma vez, depois repete enquanto a condição for verdadeira / Executes at least once, then repeats while the condition is true
 
 ---
 
-### Tabela Comparativa
+### Tabela Comparativa / Comparison Table
 
-| Estrutura | Descrição | Observações |
+| Estrutura / Structure | Descrição / Description | Observações / Notes |
 |-----------|-----------|-------------|
-| **for** | Laço com inicialização, condição e incremento/decremento | Python utiliza `for in range()` |
-| **while** | Executa enquanto a condição for verdadeira | Igual em várias linguagens; em Python usa `:` |
-| **do-while** | Executa ao menos uma vez, depois repete enquanto a condição for verdadeira | Python não possui `do-while` nativo |
+| **for** | Laço com inicialização, condição e incremento/decremento / Loop with initialization, condition, and increment/decrement | Python utiliza `for in range()` / Python uses `for in range()` |
+| **while** | Executa enquanto a condição for verdadeira / Executes while the condition is true | Igual em várias linguagens; em Python usa `:` / Same in several languages; in Python uses `:` |
+| **do-while** | Executa ao menos uma vez, depois repete enquanto a condição for verdadeira / Executes at least once, then repeats while the condition is true | Python não possui `do-while` nativo / Python does not have a native `do-while` |
+
 
 ---
 
-### Exemplos de For
+### For
 ```c
 // C, C++, C#
 for(int i = 0; i < 5; i++) {
@@ -252,7 +261,7 @@ for i := 0; i < 5; i++ {
     fmt.Println(i)
 }
 ```
-### Exemplos de While / Do-While
+### While / Do-While
 ```c
 // C, C++, C#
 int i = 0;
@@ -357,12 +366,12 @@ for {
 
 ---
 
-# 3️⃣ Procedimentos / Funções
+# 3️⃣ Procedimentos / Funções / Procedures / Functions
 
-**Conceito:**
-Blocos de código reutilizáveis.
-- Procedimento: executa ações, **não retorna valor**
-- Função: executa ações, **retorna valor**
+**Conceito / Concept:**  
+Blocos de código reutilizáveis / Reusable code blocks  
+- Procedimento: executa ações, **não retorna valor** / Procedure: performs actions, **does not return a value**  
+- Função: executa ações, **retorna valor** / Function: performs actions, **returns a value**
 
 ---
 
@@ -439,38 +448,39 @@ func soma(a int, b int) int {
 
 # 4️⃣ Vetores / Arrays
 
-**Conceito:**
-Estrutura de dados que armazena múltiplos valores do mesmo tipo, acessíveis por índice.
+**Conceito / Concept:**  
+Estrutura de dados que armazena múltiplos valores do mesmo tipo, acessíveis por índice / 
+Data structure that stores multiple values of the same type, accessible by index
 
 ---
 
 ```c
 // C
-int numeros[5] = {1, 2, 3, 4, 5};
+int numbers[5] = {1, 2, 3, 4, 5};
 ```
 ```java
 // Java
-int[] numeros = {1, 2, 3, 4, 5};
+int[] numbers = {1, 2, 3, 4, 5};
 ```
 ```js
 // JavaScript
-let numeros = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 ```
 ```python
 # Python
-numeros = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 ```
 ```ruby
 # Ruby
-numeros = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5]
 ```
 ```php
 // PHP
-$numeros = array(1, 2, 3, 4, 5);
+$numbers = array(1, 2, 3, 4, 5);
 ```
 ```go
 // Go
-numeros := []int{1, 2, 3, 4, 5}
+numbers := []int{1, 2, 3, 4, 5}
 ```
 
 ---
